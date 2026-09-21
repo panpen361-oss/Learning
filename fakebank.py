@@ -1,5 +1,29 @@
-user_username = 'Admin bank'
-user_password = 'Adminaccount'
+"""
+username = input("Enter a username: ")
+
+if len(username) > 12:
+    print("Your username cant be more than 12 characters")
+elif not username.find(" ") == -1:
+    print("Your username cant contain spaces")
+elif not username.isalpha():
+    print("Your username cant contain numbers")
+else:
+    print(f"Welcome {username}")
+
+
+--------------------------------------
+
+print('1. Borrow loan')
+print('2. Investment future calc')
+print('3. International Transfer')
+print('4. ')
+choice = int(input('Enter your choice: '))
+"""
+
+
+
+user_username = 'Phan Nguyen'
+user_password = 'Chaseaccount'
 qualify_user = True 
 user_balance = 30000
 
@@ -259,11 +283,37 @@ elif package_choice == 5:
  
    
 elif choice_finance == 2:
-    print('1. Renting house')
+    print('1. House Flipping')
     print('2. Bank annual return')
     print('3. Stock')
     investment_choice = int(input('Choose your investment plan'))
-    
+
+    if investment_choice == 1:
+        capitals_fund = 3000000
+        print('House Flipping')
+        print(f'Total capitals of ${capitals_fund:,.2f}')
+        print('House option: ')
+        house1_price = 450000
+        house2_price = 885000
+        house3_price = 1450000
+        print(f'1.3 bedroom, 2 bathroom, no backyard, 1,000 square feet, cost ${house1_price}')
+        print(f'1.4 bedroom, 2 bathroom, have backyard, 1,887 square feet, cost ${house2_price}')
+        print(f'1.5 bedroom, 3 bathroom, have backyard, 3,139 square feet, have pool, cost ${house3_price}')
+        house_option = int(input('Select which house you want to calculate the profit you earn per month'))
+        if house_option == 1:
+            print('')
+        elif house_option == 2:
+            print('')
+        elif house_option == 3:
+            print('')
+        else:
+            print('Sorry your input is not valid! please choose 1-3 since those the only thing we got to offer.')
+    elif investment_choice == 2:
+        print('')
+    elif investment_choice == 3:
+        print('')
+
+
 elif choice_finance == 3:
     print('')
 elif choice_finance == 4:
